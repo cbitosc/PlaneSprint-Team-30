@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hotel Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+    
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .hotel {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+    
+    .hotel:hover {
+      transform: scale(1.05);
+    }
+    
+    .hotel-image {
+      flex: 1 1 300px;
+      margin-right: 20px;
+    }
+    
+    .hotel-image img {
+      width: 100%;
+      height: 400px;
+    }
+    
+    .hotel-details {
+      flex: 1 1 400px;
+    }
+    
+    .hotel-name {
+      font-size: 24px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .hotel-description {
+      color: #555;
+      margin-bottom: 20px;
+    }
+    
+    .hotel-price {
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    
+    .room-description {
+      font-size: 16px;
+      color: #666;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+    
+    .room-features {
+      list-style-type: disc;
+      margin-left: 20px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Our Hotel</h1>
+    
+    <div class="hotel">
+      <div class="hotel-image">
+        <img src="C:\Users\kusum\Downloads\pexels-pixabay-237371.jpg" alt="Hotel 1">
+      </div>
+      <div class="hotel-details">
+        <h2 class="hotel-name">Mini room</h2>
+        <p class="hotel-description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at lacus quis mauris auctor volutpat.
+        </p>
+        <p class="hotel-price">
+          Price: $200 per night
+        </p>
+        <p class="room-description">
+          Room for Two:
+        </p>
+        <ul class="room-features">
+          <li>Comfortable queen-size bed</li>
+          <li>Private bathroom with shower</li>
+          <li>Air conditioning</li>
+          <li>Flat-screen TV</li>
+          <li>Free Wi-Fi</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="hotel">
+      <div class="hotel-image">
+        <img src="C:\Users\kusum\Downloads\pexels-jean-van-der-meulen-1454806.jpg" alt="Hotel 2">
+      </div>
+      <div class="hotel-details">
+        <h2 class="hotel-name">luxurious room</h2>
+        <p class="hotel-description">
+          Sed ac elit sed nisl rutrum feugiat. Duis quis massa ut ipsum laoreet pellentesque vel id est.
+        </p>
+        <p class="hotel-price">
+          Price: $150 per night
+        </p>
+        <p class="room-description">
+          Room for Four:
+        </p>
+        <ul class="room-features">
+          <li>Two comfortable queen-size beds</li>
+          <li>Private bathroom with shower</li>
+          <li>Air conditioning</li>
+          <li>Flat-screen TV</li>
+          <li>Free Wi-Fi</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="hotel">
+      <div class="hotel-image">
+        <img src="C:\Users\kusum\Downloads\pexels-pixabay-210604.jpg" alt="Hotel 3">
+      </div>
+      <div class="hotel-details">
+        <h2 class="hotel-name">Beach house</h2>
+        <p class="hotel-description">
+          Nulla lobortis semper malesuada. Vestibulum ut orci quis justo tincidunt consequat. Mauris in leo sed velit varius rutrum.
+        </p>
+        <p class="hotel-price">
+          Price: $500 per night
+        </p>
+        <p class="room-description">
+          Beach House:
+        </p>
+        <ul class="room-features">
+          <li>Spacious living area</li>
+          <li>Multiple bedrooms and bathrooms</li>
+          <li>Fully-equipped kitchen</li>
+          <li>Private terrace with ocean view</li>
+          <li>Access to private beach</li>
+          <li>Free Wi-Fi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

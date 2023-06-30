@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>TRAVEL NEST</title>
+    <style>
+        body {
+background-color:#fff
+            background-size: cover;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color:#003459;
+        }
+
+        h1 {
+            letter-spacing: 1px;
+            color: aliceblue;
+            font-size: 2.2rem;
+            font-weight: bolder;
+           
+            
+        }
+
+        nav ul li {
+            list-style: none;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            background-color:rgb(192, 90, 90);
+            transition: .3s ease;
+            border-radius: 7px;
+        }
+
+        .btn {
+            background-color: #EE6C4D
+            color: black;
+            border: 2px solid black;
+            border-radius: 15px;
+            padding: 9px;
+            margin: 2px;
+            font-weight: bold;
+            width: 98px;
+        }
+
+        span {
+            color: red;
+            font-size: 2.6rem;
+            font-weight: bold;
+        }
+
+        .front {
+            height: 70vh;
+            width: 100%;
+            background: linear-gradient(rgb(0, 0, 0, 0.9), rgb(0, 0, 0, 0.9)), url('C:\Users\kusum\OneDrive\Pictures\home.jpeg');
+            background-size: cover;
+            margin-top: 20px;
+            border-radius: 5px;
+
+        }
+
+        .mycards {
+
+
+            display: flex;
+            align-items: centre;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+        }
+        .cards:hover{
+            transform: scale(1.1);
+        }
+
+        .cards {
+            height: 300px;
+            width: 400px;
+            padding: 20px 20px;
+            margin-top: 20px;
+            color: #fff;
+            border-radius: 4px;
+            background-color: #3D5A80;
+            border: 1px solid lightgrey;
+            position: relative;
+            box-shadow: 2px 5px 6px rgb(0, 0, 0, 0.5);
+        }
+        .cardimg{
+            width: 400px;
+            height: 250px;
+        }
+
+        .cards img:hover {
+           
+        }
+        .diff{
+            color:#1b1b1e;
+          
+            line-height: 50px;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 2rem;
+        }
+
+        h1 {
+		text-align: center;
+	}
+
+	form {
+		max-width: 500px;
+		margin: 0 auto;
+		padding: 20px;
+		background-color:#3D5A80;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		border-radius: 5px;
+	}
+
+	label {
+		display: block;
+		margin-bottom: 10px;
+		font-weight: bold;
+	}
+
+	input[type="text"], input[type="date"], input[type="number"] {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid #ccc;
+		border-radius: 5px;
+		margin-bottom: 20px;
+		box-sizing: border-box;
+	}
+
+	button {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		background-color: #EE6C4D;
+		color: #fff;
+        border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		margin-bottom: 10px;
+	}
+
+	button:hover {
+		background-color:palevioletred;
+        color: rgb(0,0,0);
+	}
+
+	#add-button, #pay-button {
+		animation: pulse 1s infinite;
+	}
+    h4{
+        text-align: center;
+        letter-spacing: 2px;
+        color: #fff;
+        font-size: 1rem;
+    }
+#bf{
+    color: #293241
+}
+#Social
+{
+    
+	margin-top: 50px;
+	padding: 20px;
+	background-color: #293241;
+	color: rgb(175, 18, 18);
+}
+#Social h1
+{
+	font-size: 15px;
+	text-align: left;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#Social .noida
+{
+	margin-left: 35px;
+}
+#Social .fa
+{
+	padding-right: 20px;
+	font-size:15px;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+}
+       .logo{
+        height: 120px;
+        width: 150px;
+       }
+     
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <nav>
+            <img class='logo'src="C:\Users\kusum\OneDrive\Desktop\phoenix\logo.jpg" alt="">
+           <div class="head"><h1 class="head">Travel <span >Nest</span></h1>
+            <h3 style="color: #fff; font-style: italic;">Find Your Perfect nest for your perfect trip.....<3</h3>
+        </div> 
+            <ul>
+                <li><a href="https://www.google.com/">Home</a></li>
+                <li><a href="#">Service</a> </li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+
+            </ul>
+            <button onclick="window.location.href='l.html';" class="btn">Login</button>
+
+        </nav>
+    </div>
+    <div class="section">
+        <img class="front" src="C:\Users\kusum\OneDrive\Pictures\home.jpeg" alt="">
+
+    </div>
+    
+    <h1 id="bf">Hotel Booking Form</h1>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name"><br>
+
+		<label for="check-in-date">Check-in Date:</label>
+		<input type="date" id="check-in-date" name="check-in-date"><br>
+
+		<label for="check-out-date">Check-out Date:</label>
+		<input type="date" id="check-out-date" name="check-out-date"><br>
+
+		<label for="num-rooms">Number of Rooms:</label>
+		<input type="number" id="num-rooms" name="num-rooms"><br>
+
+		<label for="price">Price:</label>
+		<input type="number" id="price" name="price"><br>
+
+		<button type="button" id="pay-button" onclick="window.location.href='./pay.html';">Pay</button>
+		
+	</form>
+    <div class="about">
+        <p class="diff">Any place on Earth,No worries we will make you feel Home</p>
+     </div>
+
+     <div class="container">
+        <div class="mycards">
+
+            <div class="cards">
+                <img class="cardimg" src="C:\Users\kusum\Downloads\pexels-asad-photo-maldives-3601421.jpg" alt="" id="img">
+                <h4>Islands</h4>
+                
+            </div>
+            <div class="utube">
+
+                <i class="fa fa-youtube-play"></i>
+
+            </div>
+            <div class="cards">
+                <img class="cardimg"  src="C:\Users\kusum\Downloads\pexels-pixabay-258154.jpg" alt="" id="img">
+                <h4>Resorts</h4>
+                
+            </div>
+            <div class="utube">
+                <i class="fa fa-youtube-play"></i>
+            </div>
+            <div class="cards" alt="" id="img">
+                <img class="cardimg"  src="C:\Users\kusum\Downloads\pexels-max-rahubovskiy-5997994.jpg" alt="" id="img">
+                <h4>Villas</h4>
+                
+            </div>
+            <div class="utube">
+                <i class="fa fa-youtube-play"></i>
+            </div>
+            
+            
+    </div>
+    <div id="contact">
+        
+    </div>
+
+    <section id="Social" >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h1 style="font-size: 30px">Contact</h1>
+              <p style="font-size: 20px"><i class="fa fa-phone-square"></i> +91 9618266824 </p>
+              <p style="font-size: 20px"><i class="fa fa-envelope"></i> tnest@gmail.com</p>
+              <p style="font-size: 20px"><a href="https://www.kccitm.college/#contact"><i class="fa fa-address-card"></i></a> Gandipet</p>
+             
+             </div>
+             <div class="col-md-3">
+              <h1 style="font-size: 30px">Follow Us On</h1>
+              <p style="font-size: 20px"><a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a> Facebook</p>
+              <p style="font-size: 20px"><a href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a> Instagram</p>
+              <p style="font-size: 20px"><a href="https://twitter.com/?lang=en"><i class="fa fa-twitter"></i></a> Twitter</p>
+              
+            </div>
+          </div>
+        </div>
+</section>
+
+    <script>
+        const image = document.querySelectorAll('#img')[0];
+        image.addEventListener('click', function () {
+            window.open('islands.html');
+        })
+        const imag = document.querySelectorAll('#img')[1];
+        imag.addEventListener('click', function () {
+            window.open('resort.html');
+        })
+        const ima = document.querySelectorAll('#img')[2];
+        ima.addEventListener('click', function () {
+            window.open('villa.html');
+        })
+
+        const addbutton = document.getElementById('add-button');
+        const payButton=document.getElementById('pay-button');
+        addbutton.addEventListener('click',() => { alert('room added to list!');});
+        payButton.addEventListener('click',() => { window.location.href='https://google.com/payment';});
+
+    </script>
+</body>
+
+</html>
